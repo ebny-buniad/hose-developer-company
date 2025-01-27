@@ -20,10 +20,14 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    backgroundImage: {
+                        'custom-gradient': 'linear-gradient(180deg, rgba(218,245,215,0.5018382352941176) 0%, rgba(255,255,255,0.3701855742296919) 100%)',
+                        'custom-gradient-2': 'linear-gradient(to bottom, #43cea2, #185a9d)',
+                    },
                     colors: {
                         clifford: '#da373d',
                         'primary-color': '#ABEF5F',
-                        'secondary-color': '#d6f7b0'
+                        'secondary-color': '#d6f7b0',
                     },
                     fontFamily: {
                         manrope: ["Manrope", "serif"]
@@ -35,12 +39,12 @@
 </head>
 
 <body class="font-manrope">
-    <header>
-        <div class="navbar bg-base-100 max-w-screen-xl mx-auto border py-10">
+    <header class="bg-custom-gradient">
+        <div class="navbar max-w-screen-xl mx-auto py-10 ">
             <div class="navbar-start">
                 <span class="h-9 w-9 bg-primary-color flex items-center justify-center rounded-full"><i
                         class="fa-solid fa-arrow-right -rotate-45"></i></span>
-                <a class="text-4xl font-extrabold ml-1" href="#">Rinterio</a>
+                <a class="max-sm:text-2xl md:text-4xl font-extrabold ml-1" href="#">Rinterio</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -52,11 +56,16 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <div class="h-10 w-10 border flex justify-center items-center rounded-full me-5"><a href=""><i
-                    class="fa-solid fa-magnifying-glass text-gray-400"></i></a></div>
-                <div class="h-10 w-10 border flex justify-center items-center rounded-full me-10"><a href=""><i
-                    class="fa-solid fa-cart-shopping text-gray-400"></i></a></div>
-                <a class="btn">Button</a>
+                <div class="flex items-center">
+                    <div class="h-10 w-10 border border-gray-500 flex justify-center items-center rounded-full me-5"><a
+                            href=""><i class="fa-solid fa-magnifying-glass text-gray-500"></i></a></div>
+                    <div
+                        class="h-10 w-10 border border-gray-500 flex justify-center items-center rounded-full md:me-10">
+                        <a href=""><i class="fa-solid fa-cart-shopping text-gray-500"></i></a></div>
+                    <a class="btn rounded-full bg-primary-color max-sm:hidden font-bold">Book Consult<span
+                            class="h-7 w-7 bg-black flex items-center justify-center rounded-full"><i
+                                class="fa-solid fa-arrow-right -rotate-45 text-white"></i></span></a>
+                </div>
                 <div class="dropdown dropdown-end">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -72,10 +81,24 @@
                         <li><a>Portfolio</a></li>
                         <li><a>Blogs</a></li>
                         <li><a>Contact Us</a></li>
+                        <a class="btn rounded-full bg-primary-color md:sm:hidden font-bold">Book Consult<span
+                                class="h-7 w-7 bg-black flex items-center justify-center rounded-full"><i
+                                    class="fa-solid fa-arrow-right -rotate-45 text-white"></i></span></a>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <!-- Banner section start -->
+        <div>
+            <img class="w-auto mx-auto" src="assets/banner.png" alt="">
+            <h1 class="lg:text-6xl md:text-4xl max-sm:text-2xl font-extrabold text-center md:py-10 max-sm:py-5">A barn house of this design has a <br> striking
+                appearance</h1>
+            <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+                wood, sleek metal <br class="max-md:hidden max-sm:hidden"> accents, and large windows that flood the space with natural light.</p>
+        </div>
+        <!-- Banner section end -->
+
     </header>
     <main>
 
