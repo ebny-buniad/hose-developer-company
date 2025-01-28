@@ -39,7 +39,7 @@
 </head>
 
 <body class="font-manrope">
-    <header class="bg-custom-gradient">
+    <header class="bg-custom-gradient px-2">
         <div class="navbar max-w-screen-xl mx-auto py-10 ">
             <div class="navbar-start">
                 <span class="h-9 w-9 bg-primary-color flex items-center justify-center rounded-full"><i
@@ -61,7 +61,8 @@
                             href=""><i class="fa-solid fa-magnifying-glass text-gray-500"></i></a></div>
                     <div
                         class="h-10 w-10 border border-gray-500 flex justify-center items-center rounded-full md:me-10">
-                        <a href=""><i class="fa-solid fa-cart-shopping text-gray-500"></i></a></div>
+                        <a href=""><i class="fa-solid fa-cart-shopping text-gray-500"></i></a>
+                    </div>
                     <a class="btn rounded-full bg-primary-color max-sm:hidden font-bold">Book Consult<span
                             class="h-7 w-7 bg-black flex items-center justify-center rounded-full"><i
                                 class="fa-solid fa-arrow-right -rotate-45 text-white"></i></span></a>
@@ -81,7 +82,7 @@
                         <li><a>Portfolio</a></li>
                         <li><a>Blogs</a></li>
                         <li><a>Contact Us</a></li>
-                        <a class="btn rounded-full bg-primary-color md:sm:hidden font-bold">Book Consult<span
+                        <a class="btn rounded-full bg-primary-color sm:hidden font-bold">Book Consult<span
                                 class="h-7 w-7 bg-black flex items-center justify-center rounded-full"><i
                                     class="fa-solid fa-arrow-right -rotate-45 text-white"></i></span></a>
                     </ul>
@@ -92,16 +93,85 @@
         <!-- Banner section start -->
         <div>
             <img class="w-auto mx-auto" src="assets/banner.png" alt="">
-            <h1 class="lg:text-6xl md:text-4xl max-sm:text-2xl font-extrabold text-center md:py-10 max-sm:py-5">A barn house of this design has a <br> striking
+            <h1 class="lg:text-6xl md:text-4xl max-sm:text-2xl font-extrabold text-center md:py-10 max-sm:py-5">A barn
+                house of this design has a <br> striking
                 appearance</h1>
-            <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
-                wood, sleek metal <br class="max-md:hidden max-sm:hidden"> accents, and large windows that flood the space with natural light.</p>
+            <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication,
+                featuring weathered
+                wood, sleek metal <br class="max-sm:hidden"> accents, and large windows that flood the
+                space with natural light.</p>
+
+            <p class="text-center pt-10"><a
+                    class="btn border-primary-color rounded-full px-5 bg-secondary-color font-bold">View Details<span
+                        class="h-7 w-7 bg-primary-color flex items-center justify-center rounded-full"><i
+                            class="fa-solid fa-arrow-right -rotate-45"></i></span></a></p>
         </div>
         <!-- Banner section end -->
-
     </header>
-    <main>
+    <main class="bg-[#f5f5f5] py-20 mt-16 px-2">
+        <section class="max-w-screen-xl mx-auto">
+            <div class="flex max-[768px]:flex-col justify-between items-center gap-6 relative">
+                <div class="flex-1 space-y-6">
+                    <div class="absolute lg:-top-7 xl:-top-4 -left-16 hidden lg:block">
+                        <img src="assets/Vector.png" alt="">
+                    </div>
+                    <p><button class="btn rounded-full bg-white"><i class="fa-solid fa-arrow-right pe-2"></i>About
+                            Us</button></p>
+                    <h2 class="text-4xl font-extrabold">We design thoughtful, liveable spaces</h2>
+                    <p>The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
 
+                    <div class="md:flex lg:flex-col max-sm:flex-col gap-3">
+                        <div class="bg-white flex items-center gap-6 border p-5 rounded-xl">
+                            <div><img src="assets/commercial.png" alt=""></div>
+                            <div>
+                                <h6 class="font-bold text-xl">Commercial</h6>
+                                <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                            </div>
+                        </div> <br class="lg:hidden">
+                        <div class="bg-white flex items-center gap-6 border p-5 rounded-xl">
+                            <div><img src="assets/residential.png" alt=""></div>
+                            <div>
+                                <h6 class="font-bold text-xl">Residential</h6>
+                                <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 w-full">
+                    <img class="w-full max-[768px]:h-96 max-[768px]:object-cover rounded-xl" src="assets/Rectangle.png"
+                        alt="">
+                </div>
+            </div>
+
+            <!-- Achivement secton start -->
+
+            <div class="bg-white my-20 rounded-xl md:grid md:grid-cols-2 xl:grid-cols-4">
+                <div class="p-5 space-y-2 text-center">
+                    <i class="fa-regular fa-comments text-3xl text-gray-400"></i>
+                    <h2 class="text-4xl font-bold">235+</h2>
+                    <p>Happy Client Review</p>
+                </div>
+                <div class="p-5 space-y-2 text-center">
+                    <i class="fa-solid fa-building text-3xl text-gray-400"></i>
+                    <h2 class="text-4xl font-bold">50+</h2>
+                    <p>Work Departments</p>
+                </div>
+                <div class="p-5 space-y-2 text-center">
+                    <i class="fa-solid fa-users text-3xl text-gray-400"></i>
+                    <h2 class="text-4xl font-bold">35K+</h2>
+                    <p>Our Happy Client</p>
+                </div>
+                <div class="p-5 space-y-2 text-center">
+                    <i class="fa-solid fa-user-tie text-3xl text-gray-400"></i>
+                    <h2 class="text-4xl font-bold">535+</h2>
+                    <p>Staff Members</p>
+                </div>
+            </div>
+
+            <!-- Achivement secton end -->
+
+        </section>
     </main>
     <footer>
 
